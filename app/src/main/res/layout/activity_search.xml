@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".search">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="25dp">
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/enterCity"
+            android:hint="City name..."
+            android:layout_weight="2"
+            />
+        <Button
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:id="@+id/searchCity"
+            android:text="Search"
+            android:layout_marginLeft="15dp"/>
+    </LinearLayout>
+<!--    <androidx.appcompat.widget.SearchView-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:id="@+id/searchCity"-->
+<!--        app:queryHint="search here..."-->
+<!--        android:layout_margin="25dp"/>-->
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/storeCity"
+        android:padding="5dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"/>
+
+</androidx.appcompat.widget.LinearLayoutCompat>
